@@ -1,0 +1,20 @@
+<div>
+    <p>Hello : {{user.name}}</p>
+    <p>Email : {{user.email}}</p>
+    <p>Age: {{calculateAge(user.birthDate)}}</p>
+    <div [ngSwitch]="user.contact" > contact me ;
+        <span *ngSwitchCase="'Phone'">  📞</span>
+        <span *ngSwitchCase="'Email'">  📧</span>
+    </div>
+    
+</div>
+
+
+<hr>
+function result : {{getsomestring()}}
+
+<p [style.color]="color ? '{{color}}' : 'pink'">Color!</p>
+<p [style.color]="switchColor ? 'blue' : 'red'">it works</p>
+<p [ngStyle]="someObj">object style</p>
+<p [class.onOrOff]="onOff">on or off</p>
+<p [ngClass]="setMyClasses">number of classes toghter practice</p>

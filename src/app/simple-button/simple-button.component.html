@@ -1,0 +1,24 @@
+<div>
+    <button class="btn btn-lg  btn-outline-warning" (click)="alertFunctionHandle('IAI = I Can And I Will!')">
+        click me! 
+    </button>
+</div>
+<br>
+<div>
+    <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">learn hard it worth it!</h4>
+          <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+        </div>
+        <div class="modal-body">
+            <h1>Made it !</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+        </div>
+      </ng-template>
+      
+      <button class="btn btn-lg btn-outline-primary" (click)="open(content)">click Me!!</button>
+      
+</div>
+ 

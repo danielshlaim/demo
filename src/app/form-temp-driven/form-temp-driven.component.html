@@ -1,0 +1,14 @@
+<form #studentsign="ngForm" (submit)="getInfoFrom(studentsign.value)" >
+    <input type="text" ngModel name="firstName" placeholder="First name" >
+    <br>
+    <input type="text" ngModel name="lastName"  placeholder="Last name">
+    <br>
+    <input type="text" ngModel name="id" placeholder="Id">
+    
+    <ul>
+        <li> person name : {{person.firstName}}</li>
+        <li> person lastname: {{person.lastName}}</li>
+        <li> person Id: {{person.id}}</li>
+    </ul>
+    <button>apply</button>
+</form>

@@ -1,0 +1,11 @@
+<button (click)="witchOne()">toggle</button>
+<p *ngIf="picVisable; then ifTrueCat else ifFalseDog"></p>
+
+
+<ng-template #ifTrueCat>
+    <img src="https://th.bing.com/th/id/OIF.ZRdI1Qoqjy5WNJTALrFULw?pid=ImgDet&rs=1" width="400">
+</ng-template>
+
+<ng-template #ifFalseDog>
+    <img src="https://th.bing.com/th/id/OIF.PV3BTmaRmZ6SuipxtHtDCw?pid=ImgDet&rs=1" width="400">
+</ng-template>

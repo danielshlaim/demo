@@ -1,0 +1,14 @@
+.onOrOff{
+    border:double 10px yellowgreen
+    
+}
+
+.style1{
+    font-style: italic;
+    color: aqua;
+}
+
+.style2{
+    border: double;
+    border-color: chocolate;
+}
